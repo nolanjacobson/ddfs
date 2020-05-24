@@ -13,7 +13,7 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Go Home</Link>
+              <Link to="/">Go to LA </Link>
             </li>
             <li>
               <Link to="/1">Page 1</Link>

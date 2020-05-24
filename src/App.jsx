@@ -1,18 +1,17 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
-import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 import SignIn from './components/signIn'
+import SignUp from './components/SignUp'
+import Blog from './components/Blog'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/login" component={SignIn}></Route>
+        <Route exact path="/" component={Blog}></Route>
+        <Route exact path="/signup" component={SignUp}></Route>
+        <Route exact path="/signin" component={SignIn}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>

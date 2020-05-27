@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import { withStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import AppBar from '../components/AppBar';
-import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import React from 'react'
+import PropTypes from 'prop-types'
+import clsx from 'clsx'
+import { withStyles } from '@material-ui/core/styles'
+import Link from '@material-ui/core/Link'
+import AppBar from '../components/AppBar'
+import Toolbar, { styles as toolbarStyles } from '../components/Toolbar'
 
 const styles = (theme) => ({
   title: {
@@ -33,10 +33,10 @@ const styles = (theme) => ({
   linkSecondary: {
     color: theme.palette.secondary.main,
   },
-});
+})
 
 function AppAppBar(props) {
-  const { classes } = props;
+  const { classes } = props
 
   return (
     <div>
@@ -58,7 +58,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href="/signin"
             >
               {'Sign In'}
             </Link>
@@ -66,7 +66,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
+              href="/signup"
             >
               {'Sign Up'}
             </Link>
@@ -75,11 +75,11 @@ function AppAppBar(props) {
       </AppBar>
       <div className={classes.placeholder} />
     </div>
-  );
+  )
 }
 
 AppAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
-};
+}
 
-export default withStyles(styles)(AppAppBar);
+export default withStyles(styles)(AppAppBar)

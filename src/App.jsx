@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
-import Home from './components/Home'
+import Home from './pages/Home.jsx'
 
 const App = () => {
   return (
